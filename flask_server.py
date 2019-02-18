@@ -46,5 +46,11 @@ def convertImg():
     return txt
     #return jsonify({'result': txt})
 
+@app.route('/feedback', methods=['POST'])
+def updateModel():
+    json = request.get_json()
+    print(json)
+    return jsonify({"body": "hello"})
+
 if __name__ == '__main__':
     app.run(host= '0.0.0.0')
