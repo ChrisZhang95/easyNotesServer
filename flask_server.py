@@ -26,7 +26,7 @@ print("Will use lang '%s'" % (lang))
 #routing
 @app.route('/')
 def hello_world():
-    return jsonify({"about": "Hello world!"})
+    return '<h1>Hello World</h1>'
 
 @app.route('/multi/<int:num>', methods=['GET'])
 def get_mult(num):
